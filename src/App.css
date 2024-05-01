@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.App
+{
+    height:100vh; 
+    font-size: 1.5rem; 
+    font-family:"Roboto",sans-serif; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerMain
+{
+    height:100vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container
+{
+    width:70vw;;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.col1
+{
+    background-color:white;
+    height:20vh;
+
+}
+.col2
+{
+    background-color:#03045e;
+    height:20vh;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.col3
+{
+    background-color:white;
+    columns:2;
+    column-width: 100vw;
+    column-rule:2px solid #03045e;
+    display:flex;
+    flex-direction:row;
+    margin:5px;
+    background-color: #03045e;
+    color:white;
+    margin-top:100px;
+
+
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col3-1
+{
+
+    height:auto;
+    width:50%;
+    border: 3px solid white;
+    border-radius: 10px 0 0 10px;
+
+    
+}
+.col3-2
+{
+    height:auto;
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 0 10px  10px 0;
+}
+p
+{
+    text-align:center;
+    margin-bottom: 50px ;
+    padding-left: 3px;
+    padding-top:50px;
+
+}
+
+main
+{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+}
+button
+{
+    transition: 0.5s;
+    background-color: transparent;
+    border:3px solid white ;
+    border-radius: 5px;
+    width:30vw;
+    height:6vh;
+    font-weight: bold;
+    color:white;
+    font-size:large;
+    margin:80px;
+    
+}
+
+input
+{
+    width:50vw;
+    height:50px;
+    margin-top:80px;
+    font-size:1.5rem;
+    border: 4px solid #101291;
+}
+
+button:hover
+{
+    background-color: white;
+    color:#03045e;
+    font-size:1rem;
+    
+
 }
